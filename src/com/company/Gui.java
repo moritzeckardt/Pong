@@ -3,6 +3,7 @@ package com.company;
 import javax.swing.*;
 
 public class Gui {
+
     //Constructor
     public Gui() {
         //MainFrame
