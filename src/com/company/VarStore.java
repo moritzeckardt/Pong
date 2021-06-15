@@ -3,7 +3,7 @@ package com.company;
 import javax.swing.*;
 
 public class VarStore {
-    //Global Variables
+    // Global properties
     public static JFrame mainFrame;
     public static int screenWidth = 800;
     public static int screenHeight = 600;
