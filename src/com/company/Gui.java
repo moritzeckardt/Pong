@@ -23,7 +23,5 @@ public class Gui {
         drawHandler.setBounds(0, 0, VarStore.screenWidth, VarStore.screenHeight);
         drawHandler.setVisible(true);
         VarStore.mainFrame.add(drawHandler);
-
-
     }
 }

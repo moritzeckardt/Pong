@@ -36,8 +36,12 @@ public class DrawHandler extends JLabel {
         //Points
         graphics2D.setColor(Color.WHITE);
         graphics2D.setFont(VarStore.currentFont);
-        graphics2D.drawString(String.valueOf(VarStore.playerPoints), VarStore.screenWidth / 2 - 120, 525);
-        graphics2D.drawString(String.valueOf(VarStore.enemyPoints), VarStore.screenWidth / 2 + 60, 525);
+        graphics2D.drawString(String.valueOf(VarStore.playerPoints), VarStore.screenWidth / 2 - 120, 540);
+        graphics2D.drawString(String.valueOf(VarStore.enemyPoints), VarStore.screenWidth / 2 + 55, 540);
+
+        //Ball
+        graphics2D.setColor(Color.BLUE);
+        graphics2D.fillRect(VarStore.xCoordinateOfBall, VarStore.yCoordinateOfBall, 20, 20);
 
         repaint();
     }

@@ -19,6 +19,8 @@ public class VarStore {
     public static int yCoordinateOfPlayer = 185;
     public static int xCoordinateOfEnemy = 750;
     public static int yCoordinateOfEnemy = 185;
+    public static int xCoordinateOfBall = 500; //start point
+    public static int yCoordinateOfBall = 500; //start point
 
     public static int playerPoints = 0;
     public static int enemyPoints = 0;
@@ -27,6 +29,7 @@ public class VarStore {
 
     //Constructor
     public VarStore() {
+        //Font
         try {
             currentFont = Font.createFont(Font.TRUETYPE_FONT, new File("Gotham Bold.otf")).deriveFont(85f);
             GraphicsEnvironment graphicsEnv = GraphicsEnvironment.getLocalGraphicsEnvironment();
