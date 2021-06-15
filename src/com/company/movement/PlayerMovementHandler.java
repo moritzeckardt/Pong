@@ -1,4 +1,6 @@
-package com.company;
+package com.company.movement;
+
+import com.company.VarStore;
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -1,4 +1,6 @@
-package com.company;
+package com.company.gui;
+
+import com.company.VarStore;
 
 import javax.swing.*;
 import java.awt.*;
@@ -36,8 +38,8 @@ public class DrawHandler extends JLabel {
         //Points
         graphics2D.setColor(Color.WHITE);
         graphics2D.setFont(VarStore.currentFont);
-        graphics2D.drawString(String.valueOf(VarStore.playerPoints), VarStore.screenWidth / 2 - 120, 540);
-        graphics2D.drawString(String.valueOf(VarStore.enemyPoints), VarStore.screenWidth / 2 + 55, 540);
+        graphics2D.drawString(String.valueOf(VarStore.playerScore), VarStore.screenWidth / 2 - 120, 540);
+        graphics2D.drawString(String.valueOf(VarStore.enemyScore), VarStore.screenWidth / 2 + 55, 540);
 
         //Ball
         graphics2D.setColor(Color.BLUE);

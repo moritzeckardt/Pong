@@ -1,11 +1,15 @@
-package com.company;
+package com.company.gui;
+
+import com.company.KeyHandler;
+import com.company.VarStore;
+import com.company.gui.DrawHandler;
 
 import javax.swing.*;
 
-public class Gui {
+public class GraphicsHandler {
 
     //Constructor
-    public Gui() {
+    public GraphicsHandler() {
         //MainFrame
         VarStore.mainFrame = new JFrame();
         VarStore.mainFrame.setSize(VarStore.screenWidth, VarStore.screenHeight);
