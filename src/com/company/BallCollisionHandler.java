@@ -25,7 +25,7 @@ public class BallCollisionHandler {
                 }
 
                 //Right side collision
-                if(VarStore.xCoordinateOfBall >= VarStore.screenWidth) {
+                if(VarStore.xCoordinateOfBall + 20 >= VarStore.screenWidth) {
                     VarStore.playerScore += 1;
 
                     VarStore.xCoordinateOfBall = VarStore.screenWidth / 2 - 10;
@@ -42,6 +42,18 @@ public class BallCollisionHandler {
                     VarStore.yCoordinateOfBall = VarStore.screenHeight / 2 - 10;
 
                     VarStore.xDirectionOfBall = 1;
+                }
+
+                //Player collision
+                if (VarStore.xCoordinateOfBall < VarStore.xCoordinateOfPlayer + 15 && VarStore.xCoordinateOfBall > VarStore.xCoordinateOfPlayer &&
+                        VarStore.yCoordinateOfBall - 20 < VarStore.yCoordinateOfPlayer + 120 && VarStore.yCoordinateOfBall > VarStore.yCoordinateOfPlayer) {
+                    VarStore.xCoordinateOfBall = 1;
+                }
+
+                //Enemy collision
+                if (VarStore.xCoordinateOfBall < VarStore.xCoordinateOfEnemy && VarStore.xCoordinateOfBall > VarStore.xCoordinateOfEnemy -20 &&
+                        VarStore.yCoordinateOfBall - 20 < VarStore.yCoordinateOfEnemy + 120 && VarStore.yCoordinateOfBall > VarStore.yCoordinateOfEnemy) {
+                    VarStore.xCoordinateOfBall = -1;
                 }
             }
         }, 0, 4);

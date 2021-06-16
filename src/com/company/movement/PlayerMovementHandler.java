@@ -19,7 +19,7 @@ public class PlayerMovementHandler {
             public void run() {
                 if(VarStore.moveUp) {
                     if(VarStore.yCoordinateOfPlayer >= 10) {
-                        VarStore.yCoordinateOfPlayer -=2;
+                        VarStore.yCoordinateOfPlayer -= 2;
                     }
                 }
                 else if(VarStore.moveDown) {
