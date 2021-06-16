@@ -26,8 +26,8 @@ public class DrawHandler extends JLabel {
 
         //Line
         graphics2D.setColor(Color.WHITE);
-        for(int i = 0; i < 31; i++) {
-            graphics2D.fillRect(VarStore.screenWidth/2 - 5, i * 25, 10, 10);
+        for(int i = 0; i < 230; i++) {
+            graphics2D.fillRect(VarStore.screenWidth / 2 - 5, i * 25, 10, 10);
         }
 
         //Players

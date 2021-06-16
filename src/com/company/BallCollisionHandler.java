@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.VarStore;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -20,7 +22,7 @@ public class BallCollisionHandler {
                 }
 
                 //Upper side collision
-                if(VarStore.yDirectionOfBall <= 0) {
+                if(VarStore.yCoordinateOfBall <= 0) {
                     VarStore.yDirectionOfBall = 1;
                 }
 
@@ -47,13 +49,13 @@ public class BallCollisionHandler {
                 //Player collision
                 if (VarStore.xCoordinateOfBall < VarStore.xCoordinateOfPlayer + 15 && VarStore.xCoordinateOfBall > VarStore.xCoordinateOfPlayer &&
                         VarStore.yCoordinateOfBall - 20 < VarStore.yCoordinateOfPlayer + 120 && VarStore.yCoordinateOfBall > VarStore.yCoordinateOfPlayer) {
-                    VarStore.xCoordinateOfBall = 1;
+                    VarStore.xDirectionOfBall = 1;
                 }
 
                 //Enemy collision
                 if (VarStore.xCoordinateOfBall < VarStore.xCoordinateOfEnemy && VarStore.xCoordinateOfBall > VarStore.xCoordinateOfEnemy -20 &&
                         VarStore.yCoordinateOfBall - 20 < VarStore.yCoordinateOfEnemy + 120 && VarStore.yCoordinateOfBall > VarStore.yCoordinateOfEnemy) {
-                    VarStore.xCoordinateOfBall = -1;
+                    VarStore.xDirectionOfBall = -1;
                 }
             }
         }, 0, 4);

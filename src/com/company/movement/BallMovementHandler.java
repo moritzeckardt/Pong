@@ -19,6 +19,6 @@ public class BallMovementHandler {
                 VarStore.xCoordinateOfBall += VarStore.xDirectionOfBall;
                 VarStore.yCoordinateOfBall += VarStore.yDirectionOfBall;
             }
-        }, 0, 2);
+        }, 0, 4);
     }
 }

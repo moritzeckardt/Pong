@@ -14,7 +14,8 @@ public class Main {
         new GraphicsHandler();
         new PlayerMovementHandler();
         new EnemyMovementHandler();
-        new BallMovementHandler();
         new BallCollisionHandler();
+        new BallMovementHandler();
+
     }
 }

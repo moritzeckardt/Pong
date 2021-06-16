@@ -19,7 +19,7 @@ public class VarStore {
     public static int yCoordinateOfPlayer = 225;
     public static int xCoordinateOfEnemy = 750;
     public static int yCoordinateOfEnemy = 225;
-    public static int xCoordinateOfBall = screenWidth / 2; //starting point
+    public static int xCoordinateOfBall = screenWidth / 2;  //starting point
     public static int yCoordinateOfBall = screenHeight / 2; //starting point
     public static int xDirectionOfBall = 1; //starting direction
     public static int yDirectionOfBall = -1; //starting direction

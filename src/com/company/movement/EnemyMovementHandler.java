@@ -17,20 +17,23 @@ public class EnemyMovementHandler {
 
             @Override
             public void run() {
-                if(VarStore.yCoordinateOfBall == VarStore.yCoordinateOfEnemy) {
-                    //Do nothing
-                }
-                else if(VarStore.yCoordinateOfBall < VarStore.yCoordinateOfEnemy + 60) {
-                    if(VarStore.yCoordinateOfEnemy >= 10) {
-                        VarStore.yCoordinateOfEnemy -= 2;
+
+                if(VarStore.xCoordinateOfBall >= VarStore.screenWidth / 2 - 10) {
+                    if(VarStore.yCoordinateOfBall == VarStore.yCoordinateOfEnemy) {
+                        //Do nothing
                     }
-                }
-                else if(VarStore.yCoordinateOfBall > VarStore.yCoordinateOfEnemy + 60) {
-                    if(VarStore.yCoordinateOfEnemy <= VarStore.screenHeight - 170) {
-                        VarStore.yCoordinateOfEnemy += 2;
+                    else if(VarStore.yCoordinateOfBall < VarStore.yCoordinateOfEnemy + 60) {
+                        if(VarStore.yCoordinateOfEnemy >= 10) {
+                            VarStore.yCoordinateOfEnemy -= 2;
+                        }
+                    }
+                    else if(VarStore.yCoordinateOfBall > VarStore.yCoordinateOfEnemy + 60) {
+                        if(VarStore.yCoordinateOfEnemy <= VarStore.screenHeight - 170) {
+                            VarStore.yCoordinateOfEnemy += 2;
+                        }
                     }
                 }
             }
-        }, 0, 4);
+        }, 0, 6);
     }
 }
