@@ -34,6 +34,6 @@ public class EnemyMovementHandler {
                     }
                 }
             }
-        }, 0, 6);
+        }, 0, 5);
     }
 }

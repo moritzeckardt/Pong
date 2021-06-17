@@ -58,6 +58,6 @@ public class BallCollisionHandler {
                     VarStore.xDirectionOfBall = -1;
                 }
             }
-        }, 0, 4);
+        }, 0, 3);
     }
 }
