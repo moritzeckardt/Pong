@@ -5,15 +5,10 @@ import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {
 
-    //Constructor
-    public KeyHandler() {
-
-    }
-
     //Methods
     @Override
     public void keyTyped(KeyEvent e) {
-
+        //No need
     }
 
     @Override

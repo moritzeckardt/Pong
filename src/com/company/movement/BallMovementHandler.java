@@ -6,6 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class BallMovementHandler {
+
     //Properties
     Timer movementTracker;
 

@@ -6,6 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class BallCollisionHandler {
+
     //Properties
     Timer movementTracker;
 
@@ -16,6 +17,7 @@ public class BallCollisionHandler {
 
             @Override
             public void run() {
+
                 //Bottom collision
                 if(VarStore.yCoordinateOfBall + 50 >= VarStore.screenHeight) {
                     VarStore.yDirectionOfBall = -1;
@@ -34,6 +36,7 @@ public class BallCollisionHandler {
                     VarStore.yCoordinateOfBall = VarStore.screenHeight / 2 - 10;
 
                     VarStore.xDirectionOfBall = -1;
+                    VarStore.yDirectionOfBall = -1;
                 }
 
                 //Left side collision
@@ -44,6 +47,7 @@ public class BallCollisionHandler {
                     VarStore.yCoordinateOfBall = VarStore.screenHeight / 2 - 10;
 
                     VarStore.xDirectionOfBall = 1;
+                    VarStore.yDirectionOfBall = -1;
                 }
 
                 //Player collision

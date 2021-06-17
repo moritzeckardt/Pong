@@ -16,6 +16,5 @@ public class Main {
         new EnemyMovementHandler();
         new BallCollisionHandler();
         new BallMovementHandler();
-
     }
 }

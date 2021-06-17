@@ -2,7 +2,6 @@ package com.company.gui;
 
 import com.company.KeyHandler;
 import com.company.VarStore;
-import com.company.gui.DrawHandler;
 
 import javax.swing.*;
 
