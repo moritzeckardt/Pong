@@ -1,7 +1,6 @@
 package com.company;
 
 import com.company.VarStore;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
